@@ -227,14 +227,14 @@ footer{
     width: 40px;
     font-size: 20px;
     line-height: 40px;
-    border: 1px solid #009688;
+    border: 1px solid rgb(255, 145, 0);
     margin: 40px 5px 0;
-    color: #009688;
+    color: rgb(255, 145, 0);
     cursor: pointer;
     transition: .5s;
 }
 .social-links img:hover{
-    background: #009688;
+    background: rgb(255, 145, 0);
     color: #fff;
     transform: translateY(-7px);
 }
