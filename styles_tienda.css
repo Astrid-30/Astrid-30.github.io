@@ -286,3 +286,70 @@ header{
 .payment-form button:hover {
     background-color: #0056b3;
 }
+/*Footer*/
+footer{
+    padding: 100px 0 20px;
+    background: #efefef;
+}
+.title-text{
+    text-align: center;
+}
+.footer-row{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-left,.footer-rigth{
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.footer-right{
+    text-align: right;
+}
+.footer-row h1{
+    margin: 10px 0;
+}
+.footer-row p{
+    line-height: 35px;
+}
+/* Tamaño de íconos de footer*/
+.footer-left p img{
+    width: 15px; 
+    height: 15px;
+}
+.footer-right p img{
+    width: 15px; 
+    height: 15px;
+}
+.footer-left h1{
+ font-size: 20px;
+}
+.footer-right h1{
+    font-size: 20px;
+   }
+.social-links{
+    text-align: center;
+}
+.social-links img{
+    width: 29px; 
+    height: 29px;
+}
+.social-links img{
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    border: 1px solid rgb(255, 145, 0);
+    margin: 40px 5px 0;
+    color: rgb(255, 145, 0);
+    cursor: pointer;
+    transition: .5s;
+}
+.social-links img:hover{
+    background: rgb(255, 145, 0);
+    color: #fff;
+    transform: translateY(-7px);
+}
