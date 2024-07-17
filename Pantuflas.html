@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Tienda</title>
+		<link rel="stylesheet" href="styles_tienda.css" />
+	</head>
+	<body>
+		<header>
+			<div class="logo-container">
+				<img src="logo_2.png" alt="Logo de la tienda" class="logo">
+			</div>
+			<nav class="menu">
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<!--Menú vetical-->
+					<li>
+						<a href="tienda.html">Tienda</a>
+						<ul class="menu-vertical">
+							<li><a href="Tacones.html">Tacones</a></li>
+							<li><a href="Zapatillas.html">Zapatillas</a></li>
+							<li><a href="Botas.html">Botas</a></li>
+							<li><a href="Pantuflas.html">Pantuflas</a></li>
+							<li><a href="Sandalias.html">Sandalias</a></li>
+						</ul>
+					</li>
+
+					<li><a href="Sobre_nosotros.html">Sobre nosotros</a></li>
+					<li><a href="Contacto.html">Contacto</a></li>
+				</ul>
+			</nav>
+			<div class="main" id="main">
+			<div class="container-icon">
+				<div class="container-cart-icon">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="icon-cart"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+						/>
+					</svg>
+					<div class="count-products">
+						<span id="contador-productos">0</span>
+					</div>
+				</div>
+
+				<div class="container-cart-products hidden-cart">
+					<div class="row-product hidden">
+						<div class="cart-product">
+							<div class="info-cart-product">
+								<span class="cantidad-producto-carrito">1</span>
+								<p class="titulo-producto-carrito">Zapatos Nike</p>
+								<span class="precio-producto-carrito">$80</span>
+							</div>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								class="icon-close"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M6 18L18 6M6 6l12 12"
+								/>
+							</svg>
+						</div>
+					</div>
+
+					<div class="cart-total hidden">
+						<h3>Total:</h3>
+						<span class="total-pagar">$200</span>
+					</div>
+					<p class="cart-empty">El carrito está vacío</p>
+					<!-- Formulario de pago -->
+					<div class="payment-form">
+						<h3>Información de Pago</h3>
+						<label for="card-number">Número de Tarjeta:</label>
+						<input type="text" id="card-number" name="card-number" placeholder="Ingrese el número de tarjeta">
+						<label for="card-name">Nombre en la Tarjeta:</label>
+						<input type="text" id="card-name" name="card-name" placeholder="Ingrese el nombre en la tarjeta">
+						
+						<label for="expiration-date">Fecha de Vencimiento:</label>
+						<input type="text" id="expiration-date" name="expiration-date" placeholder="MM/YY">
+						
+						<label for="cvv">CVV:</label>
+						<input type="text" id="cvv" name="cvv" placeholder="Ingrese el código de seguridad CVV">
+						<button id="submit-payment">Realizar Pago</button>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="container-items">
+			<div class="item">
+				<figure>
+					<img
+						src="https://m.media-amazon.com/images/I/612XHSHV4vL._AC_UF894,1000_QL80_.jpg"
+						alt="1"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Pantuflas de osito</h2>
+					<p class="price">$20</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="https://i5.walmartimages.com.mx/mg/gm/3pp/asr/3d07f185-78cb-4636-872d-f05774935314.20a0181f81043cdfffad1138e384b1f0.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF"
+						alt="2"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Pantuflas de conejo</h2>
+					<p class="price">$20</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="https://m.media-amazon.com/images/I/41rOae9-TdL._AC_.jpg"
+						alt="3"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Pantuflas de conejo</h2>
+					<p class="price">$20</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="https://i5.walmartimages.com.mx/mg/gm/3pp/asr/78cabb02-675d-4bb2-adc3-5402b3ac11cc.35378c9e4ca146f0962441c21772a46e.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF"
+						alt="4"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Pantuflas de vaca</h2>
+					<p class="price">$20</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="https://i5.walmartimages.com.mx/mg/gm/3pp/asr/e75546a8-a5a3-40a1-a8c8-59af55ca7f34.cdad7ef7da5dcaf09513c583e5ffe7c3.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF"
+						alt="5"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Pantuflas chocolates</h2>
+					<p class="price">$20</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img src="https://i.pinimg.com/550x/f2/e9/26/f2e926c7465cbf0b5d4bdc592f674812.jpg" 
+					alt="6">
+				</figure>
+				<div class="info-product">
+					<h2>Pantuflas de gato</h2>
+					<p class="price">$20</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img src="https://m.media-amazon.com/images/I/61iwGSLjAnL._AC_UF894,1000_QL80_.jpg" 
+					alt="7">
+				</figure>
+				<div class="info-product">
+					<h2>Pantuflas de fresa</h2>
+					<p class="price">$20</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img src="https://ae01.alicdn.com/kf/Sf9173551f2104119a3fea3b75c639355k.jpg_640x640Q90.jpg_.webp" 
+					alt="8">
+				</figure>
+				<div class="info-product">
+					<h2>Pantuflas de Stich</h2>
+					<p class="price">$20</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img src="https://img.ltwebstatic.com/images3_spmp/2023/09/21/cb/16952637023d8958beacf54b806cd7395b37e490ae_thumbnail_720x.jpg" 
+					alt="9">
+				</figure>
+				<div class="info-product">
+					<h2>Pantuflas con lazo</h2>
+					<p class="price">$20</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<!--Fin productos-->
+		</div>
+	
+	<script src="tienda.js"></script>
+	<!--Pie de la página-->
+
+<footer id="footer">
+    <div class="title-text"> <p>CONTACTO</p>
+   <h1>Visítanos</h1>
+   <i><h4>Chorido's Fashion</h4></i>
+    </div>
+
+    <div class="footer-row">
+        <div class="footer-left">
+            <h1>Horarios de apertura</h1>
+            <p><img src="icon1.png">Lunes a viernes - 10am hasta 7pm</p>
+            <p><img src="icon1.png">Sábados y domingos - 8am hasta 9pm</p>
+        </div>
+        <div class="footer-right">
+            <h1>Mantente en contacto</h1>
+            <p>#40, Calle Principal, Edificio XYZ<img src="icon2.png"></p>
+            <p>astridpere66@gmail.com<img src="icon3.png"></p>
+            <p>+507 600000<img src="icon4.png"></p>
+        </div>
+    </div>
+    <div class="social-links">
+        <img src="if.png">
+        <img src="in.png">
+        <img src="it.png">
+        <img src="iy.png">
+    </div>
+</footer>    
+	</body>
+</html>
