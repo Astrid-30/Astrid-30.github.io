@@ -8,6 +8,7 @@ body{
     max-width: 2800px;
     font-family: 'Times New Roman', Times, serif;
     color: #333;
+    background-image: url("https://us.123rf.com/450wm/liudmilachernetska/liudmilachernetska2304/liudmilachernetska230422930/201592203-zapatos-elegantes-con-cordones-brillantes-en-collage-de-fondos-de-diferentes-colores.jpg?ver=6");
 }
 img {
     max-width: 100%;
@@ -186,4 +187,119 @@ ul li.active a{
     font-size: 24px;
     margin-right: 10px;
     color: #e74d06;
+}
+/*Cuadros*/
+.secciones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 120px;
+}
+
+.seccion {
+    min-height: 20vh;
+    max-width: 800px;
+    width: 45%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.seccion .card {
+    background: #fff;
+    height: 90%;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.seccion h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.seccion p {
+    line-height: 38px;
+    margin-bottom: 40px;
+    color: #494949;
+    font-size: 17px;
+    text-align: justify;
+}
+
+
+@media (max-width: 768px) {
+    .seccion {
+        width: 90%;
+    }
+}
+/*Footer*/
+footer{
+    padding: 100px 0 20px;
+    background: #efefef;
+}
+.title-text{
+    text-align: center;
+}
+.footer-row{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-left,.footer-rigth{
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.footer-right{
+    text-align: right;
+}
+.footer-row h1{
+    margin: 10px 0;
+}
+.footer-row p{
+    line-height: 35px;
+}
+/* Tamaño de íconos de footer*/
+.footer-left p img{
+    width: 15px; 
+    height: 15px;
+}
+.footer-right p img{
+    width: 15px; 
+    height: 15px;
+}
+.footer-left h1{
+ font-size: 20px;
+}
+.footer-right h1{
+    font-size: 20px;
+   }
+.social-links{
+    text-align: center;
+}
+.social-links img{
+    width: 29px; 
+    height: 29px;
+}
+.social-links img{
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    border: 1px solid rgb(255, 145, 0);
+    margin: 40px 5px 0;
+    color: rgb(255, 145, 0);
+    cursor: pointer;
+    transition: .5s;
+}
+.social-links img:hover{
+    background: rgb(255, 145, 0);
+    color: #fff;
+    transform: translateY(-7px);
 }
