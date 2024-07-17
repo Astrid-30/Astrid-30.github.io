@@ -353,3 +353,12 @@ footer{
     color: #fff;
     transform: translateY(-7px);
 }
+/*Menú vertical*/
+.menu-vertical {
+    margin-top: 20px; /* Ajusta el valor según la cantidad de espacio que desees */
+    list-style: none;
+    padding: 0;
+}
+.menu-vertical li {
+    margin-bottom: 10px; /* Espacio entre los elementos de la lista */
+}
