@@ -120,33 +120,59 @@ ul li.active a{
     grid-template-columns: repeat(3, 1fr);
 }
 /*Fin barra*/
-/*Aside*/
-.aside-left {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
+/*Carrusel*/
+.carrusel {
+    margin: 20px auto; /* Ajusta el valor según sea necesario */
+    width: 960px;
+}
+
+.carrusel .slider {
+    background: white;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.carrusel .slider::before,
+.carrusel .slider::after {
+    content: "";
+    height: 100px;
+    position: absolute;
     width: 200px;
-    background-color: #ccc;
-    margin-top: 130px;
-    margin-left: 20px; /* Add a left margin of 20px */
-    margin-right: 20px; /* Add a right margin of 20px */
-    margin-bottom: 20px;
-  }
-  
-  .aside-right {
-    position: fixed;
-    top: 0;
-    bottom: 0;
+    z-index: 2;
+}
+
+.carrusel .slider::after {
     right: 0;
-    width: 200px;
-    background-color: #ccc;
-    margin-top: 130px;
-    margin-left: 20px; /* Add a left margin of 20px */
-    margin-right: 20px; /* Add a right margin of 20px */
-    margin-bottom: 20px;
-  }
-/*Fin aside*/
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+.carrusel .slider::before {
+    left: 0;
+    top: 0;
+}
+
+.carrusel .slide-track {
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+}
+
+.carrusel .slide {
+    height: 100px;
+    width: 250px;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-250px * 7)); }
+}
+/*Fin Carrusel*/
+
 /*Botón*/
 .button {
     display: inline-block;
@@ -184,17 +210,17 @@ ul li.active a{
   .video_ video {
     width: 100%;
     height: 100%;
-    margin-top: 30px;
-    margin-right: 0px;
-    margin-left: 725px;
+    margin-top: 80px;
+    margin-right: 300px;
+    margin-left: 500px;
     margin-bottom: 30px;
   }
   .texto {
+    text-align: justify;
     width: 400px;
     height: 200;
-    margin-top: -190px;
+    margin-top: -120px;
     margin-right: 0px;
-    margin-left: 250px;
     margin-bottom: 0px;
   }
 /*Fin contenido*/
@@ -254,18 +280,17 @@ footer{
     width: 40px;
     font-size: 20px;
     line-height: 40px;
-    border: 1px solid #009688;
+    border: 1px solid rgb(255, 145, 0);
     margin: 40px 5px 0;
-    color: #009688;
+    color: rgb(255, 145, 0);
     cursor: pointer;
     transition: .5s;
 }
 .social-links img:hover{
-    background: #009688;
+    background: rgb(255, 145, 0);
     color: #fff;
     transform: translateY(-7px);
 }
-
 /*Sobre nosotros*/
 
 .sobre h1{
